@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hazmi Fitri Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/55e00a1abe.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logohazmi.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX DESIGNER</p>
+                    <h1>hi, I'm <span>hazmi </span><br>from malaysia</h1>
+                </div>
+            </div> 
+        </div>
+        <!-- ----------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/profile.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Energetic and passionate for technology that recently finish
+                            Bachelor of Science in Information Technology with Honors
+                            (Networking) at University Utara Malaysia (UUM). Always
+                            willing to learn and eager to help each other. Love to
+                            seeking a challenging career with a progressive organization
+                            that provides an opportunity to capitalize my technical skills
+                            and abilities in the field of information technology. I fall in love with coding during one of my 
+                            classes in university and since then I have going all out on coding. Mostly involved in html,
+                            css,javascript and java.There are a lot to learn and I am excited to start a new adventure</p>
+                        <div class="tabtitles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Java, HTML, CSS, PHP, MySQL,
+                                    JavaScript</li>
+                                <li><span>Networking</span><br>Active Directory, TCP/IP, Subnetting, IP,
+                                    DNS, DHCP, PuTTY, Cacti,
+                                    Cisco Packet Tracer</li>
+                                <li><span>Others</span><br>Office 365, Adobe XD, Adobe
+                                    Photoshop, Adobe Premiere Pro
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>IT SUPPORT / DATABASE ADMINISTRATOR</span><br>Telekom Malaysia Berhad | March 2021 - September 2021
+                                    Provide level 1 and level 2 support through directly or
+                                    remotely.
+                                    Installing and configuring workstation hardware,
+                                    software, systems, networks, printers and peripheral.
+                                    Investigating, diagnosing, and solving computer
+                                    software and hardware faults.
+                                    Managing helpdesk TM system.
+                                    Derive and update customer information into the
+                                    database.</li>
+                                <li><span>Web Development</span><br>Design websites for students during and after university graduation</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Latest Education</span><br>University Utara Malaysia (UUM) | September 2018 – September
+                                    2021 | CGPA: 3.20
+                                    Bachelor of Science in Information Technology with Honors</li>
+                              
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------services------------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing an interactive and awesome websites for any type of usage. Anything can be design based on client's requirement. You require and I will deliver.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Android apps design will be delivered to your google drive. Just give me your requirement and I will create and design your apps for you. If you trust me, then leave your apps requirements with me and I will send back completed apps back to you.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+
+            </div>
+            </div>
+        </div>
+        <!-- --------contact------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>hazmifitri3@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>014-9264140</p>
+                        <div class="socmed">
+                            <a href="https://www.facebook.com/hazmi.fitri.3/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/hazmi0802/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/hazmi-fitri-a89994203/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/resume_hazmi.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="email" placeholder="Your email" required>
+                            <textarea name="message" rows="8" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-250px";
+            }
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
